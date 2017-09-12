@@ -54,7 +54,7 @@
 		
   <configuration>
     <excludes>
-      <exclude>**/smoketest/*.java</exclude>
+      <exclude>**/smokeTest/*.java</exclude>
     </excludes>
   </configuration>
 	</build>
