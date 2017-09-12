@@ -9,7 +9,7 @@ public class Test {
      {
         Scanner teclado = new Scanner(System.in);
         int op;
-        float quantia;
+        double quantia;
         int qtdDeNotas;
         
         ContaBancaria caixa = new ContaBancaria();
@@ -96,6 +96,6 @@ public class Test {
             }
         } while(op != 4);  
    
-        
+        teclado.close();
     }
 }

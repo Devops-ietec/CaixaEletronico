@@ -1,7 +1,10 @@
 package com.caixaeletronico.CaixaEletronico;
+
+import java.util.ArrayList;
+import java.util.*;
 public class ContaBancaria
 {
-    private float totalSaques;
+    private double totalSaques;
 	private int qtdSaques;
 	
 	ArrayList qtdNotas;
@@ -19,8 +22,8 @@ public class ContaBancaria
 		}
 		else {
 			ArrayList notas = new ArrayList();
-			float resto = quantia;
-			float valor = 0;
+			double resto = quantia;
+			double valor = 0;
 			Collections.sort(qtdNotas);
 			
 			while (resto > 0) {
@@ -54,8 +57,8 @@ public class ContaBancaria
 		}
 	}
 	
-	public float consultarSaldo() {
-		float somaNotas = 0;
+	public double consultarSaldo() {
+		double somaNotas = 0;
 		
 		if (!qtdNotas.isEmpty()) {
 			for (int i = 0; i < qtdNotas.size(); i++) {
@@ -75,11 +78,11 @@ public class ContaBancaria
 		return qtdDeNotas;
 	}
 
-	public float getTotalSaques() {
+	public double getTotalSaques() {
 		return totalSaques;
 	}
 
-	public void setTotalSaques(float totalSaques) {
+	public void setTotalSaques(double totalSaques) {
 		this.totalSaques = totalSaques;
 	}
 
