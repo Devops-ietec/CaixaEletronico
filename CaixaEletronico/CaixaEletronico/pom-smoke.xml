@@ -51,6 +51,12 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		
+  <configuration>
+    <excludes>
+      <exclude>**/smoketest/*.java</exclude>
+    </excludes>
+  </configuration>
 	</build>
 
 
