@@ -1,9 +1,10 @@
 import org.junit.Test;
 import org.junit.Assert;
+import 
 
 public class SaqueTeste {
 
-    public ContaBancaria contaBancaria;
+    public ContaBancaria contaBancaria = new ContaBancaria();
 
     @Test
     public void saqueValido(){
@@ -21,5 +22,10 @@ public class SaqueTeste {
     public void saqueInvalido(){
         boolean sacou =  contaBancaria.sacar(1200);      
         Assert.assertTrue(sacou);
+    }
+
+    @Test
+    public void testeInvalido(){
+        
     }
 }
