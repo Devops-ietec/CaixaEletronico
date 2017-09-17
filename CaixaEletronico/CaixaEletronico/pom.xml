@@ -53,6 +53,10 @@
 		</plugins>
 	</build>
 
-
+  <configuration>
+    <excludes>
+      <exclude>**/smokeTest/*.java</exclude>
+    </excludes>
+  </configuration>
 
 </project>
