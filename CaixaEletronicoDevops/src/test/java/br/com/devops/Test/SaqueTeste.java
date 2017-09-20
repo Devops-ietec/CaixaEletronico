@@ -56,8 +56,9 @@ public class SaqueTeste {
 		}
 	}
 	
-	 @Rule
-	    public ExpectedException thrown = ExpectedException.none();
+	@Rule
+	public ExpectedException thrown = ExpectedException.none();
+	 
 	@Test
 	public void saqueInvalidoLimite() throws Exception {		
 		
