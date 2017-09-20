@@ -49,10 +49,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-                    		<configuration combine.self="override">
-                       		 <includes>
-                            		<include>**/src/main/java/com/caixaeletronico/CaixaEletronico/Test*</include>
-                        	 </includes>
+                    		<configuration>
+                       		 <exclude>
+					<exclude>**/Test/*.java</exclude>
+                        	 </exclude>
                     		</configuration>
 			</plugin>
 		</plugins>
