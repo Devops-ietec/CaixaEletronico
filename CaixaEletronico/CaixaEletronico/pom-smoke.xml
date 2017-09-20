@@ -49,6 +49,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+                    		<configuration combine.self="override">
+                       		 <includes>
+                            		<include>**/src/main/java/com/caixaeletronico/CaixaEletronico/TestSmoke*</include>
+                        	 </includes>
+                    		</configuration>
 			</plugin>
 		</plugins>
 		
