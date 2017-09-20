@@ -51,7 +51,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
                     		<configuration combine.self="override">
                        		 <includes>
-                            		<include>**/src/main/java/com/caixaeletronico/CaixaEletronico/TestSmoke*</include>
+                            		<include>**/src/main/java/com/caixaeletronico/CaixaEletronico/Test*</include>
                         	 </includes>
                     		</configuration>
 			</plugin>
