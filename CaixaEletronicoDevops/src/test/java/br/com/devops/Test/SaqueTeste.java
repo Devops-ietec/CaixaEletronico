@@ -2,6 +2,7 @@ package br.com.devops.Test;
 
 import static org.junit.Assert.*;
 
+import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -75,4 +76,17 @@ public class SaqueTeste {
 	        cb.sacar(5001);
 		}
 	}
+	
+	@Test
+	public void valorSaqueZero() {
+		boolean permissaoSaque = cb.sacando(0);
+		Assert.assertFalse(permissaoSaque);
+	}
+	
+	@Test
+	public void valorSaqueNegativo() {
+		boolean permissaoSaque = cb.sacando(-300);
+		Assert.assertFalse(permissaoSaque);
+	}
 }
+

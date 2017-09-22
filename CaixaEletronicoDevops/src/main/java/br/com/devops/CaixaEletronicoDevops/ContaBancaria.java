@@ -52,7 +52,8 @@ public class ContaBancaria {
 		Calendar c = Calendar.getInstance();
 		return c.get(Calendar.HOUR_OF_DAY);
 	}
-	private boolean sacando(double quantia) {
+	
+	public boolean sacando(double quantia) {
 		if ((quantia <= 0 || quantia > consultarSaldo())) {
 			return false;
 		}
